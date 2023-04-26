@@ -1,0 +1,60 @@
+body{
+    background-color: beige;
+    color: crimson;
+}
+h1{
+    text-align: center;
+    background-color: black;
+    color: yellow;
+    font-size: 38px;
+}
+hr{
+    border: 2px solid purple;
+}
+img{
+    height: 250px;
+    width: 30%;
+    margin: 1.4%;
+    border: 2px solid red;
+    float: left;
+}
+table td{
+    background-color: yellow;
+    color: black;
+    border: 2px solid rgb(228, 11, 11);
+    font-size: 20px;
+    margin: auto;
+}
+ thead th{
+    font-size: 25px;
+    background-color: blue;
+    color: aliceblue;
+    border: 3px solid red;
+}
+
+h2::before{
+    content:  'Find Jobs here';
+    width: 100%;
+    color: #2ed573;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: .4rem solid #2ed573 ;
+    animation:slide 6s linear infinite;
+    -webkit-animation:slide 6s linear infinite ;
+    overflow: hidden;
+    margin-top: 94px;
+    margin-left: 7px;
+    box-sizing: border-box;
+}
+@keyframes slide{
+    0%{ 
+        width: 0%;
+    }
+    50%{ 
+        width: 100%;
+    }
+    100%{ 
+        width: 0%;
+    }
+}

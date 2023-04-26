@@ -1,0 +1,46 @@
+body{
+    background-color: aqua;
+    color: brown;
+}
+
+img{
+    height: 300px;
+    width: 30%;
+    margin: 1.5%;
+    float: left;
+    border: 2px solid red;
+}
+p{
+    font-size: 50px;
+    text-align: center;
+}
+hr{
+    border: 4px solid purple;
+}
+#h{
+    text-align: center;
+    background-color: yellow;
+    color: red;
+}
+table{
+    color: yellow;
+    border: 2px solid white;
+    font-size: 20px;
+    margin: auto;
+    background: red;
+}
+thead,th{
+    background-color: blue;
+    color: white;
+    border: 2px solid red;
+    font-size: 25px;
+    margin: auto;
+}
+td:nth-of-type(even){
+    background-color: rgb(76, 202, 101);
+    color: black;
+}
+tr:nth-of-type(even){
+    background-color: coral;
+    color: azure;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyderabad Jobs</title>
+    <link rel="stylesheet" href="{% static "css/hyd.css" %}">
+
+</head>
+<body>
+    <h1 id='h'>Hyderabad Related Jobs Informations</h1>
+    <h2>Some Most Famous Things in Hyderabd are :</h2>
+
+        <img src=" {% static 'images/7.jfif' %}" alt="">
+        <img src=" {% static 'images/h3.jpg' %}" alt="">
+        <img src=" {% static 'images/h2.jpg' %}" alt="">
+        <img src=" {% static 'images/h1.jpg' %}" alt="">
+        <img src=" {% static 'images/h3.jpg' %}" alt="">
+        <img src=" {% static 'images/h2.jpg' %}" alt="">
+        <hr>
+        {% if jobs_list  %}
+        <table>
+            <thead>
+                <th>Date</th>
+                <th>Company</th>
+                <th>Title</th>
+                <th>Eligibility</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>Phone Number</th>
+            </thead>
+            {% for job in jobs_list %}
+            <tr>
+                <td> {{job.date}} </td>
+                <td> {{job.company}} </td>
+                <td> {{job.title}} </td>
+                <td> {{job.eligibility}} </td>
+                <td> {{job.address}} </td>
+                <td> {{job.email}} </td>
+                <td> {{job.phonenumber}} </td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <p>No Jobs are currently in Hyderabad</p>
+        
+        {% endif %}
+
+
+
+
+</body>
+</html>
